@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <nav className={`w-full p-2 bg-glassmorphism backdrop-blur-md fixed z-10 trasition ease-in-out duration-500 ${animateHeader && "shadow-xl"}`}>
-        <div className='flex flex-wrap items-center justify-between mx-auto px-4'>
+        <div className='flex flex-wrap items-center justify-between mx-auto'>
             <Link href={'/'} className='hidden sm:block text-2xl text-white font-semibold textAnimationHover'>Portfolio</Link>
             
             <div className='flex justify-center w-full sm:w-auto md-:w-auto py-1 sm:py-4' id='navbar'>
