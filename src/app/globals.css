@@ -4,7 +4,7 @@
 
 @layer components {
   .headerLink {
-    @apply block py-2 pl-3 pr-4 text-white sm:text-xl font-bold rounded md:p-0 transform transition duration-300 hover:scale-125 hover:text-blue-700
+    @apply block py-2 text-white sm:text-xl font-bold rounded md:p-0 transform transition duration-300 hover:scale-125 hover:text-blue-700
   }
 
   .textAnimationHover {

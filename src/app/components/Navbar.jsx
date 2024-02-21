@@ -27,7 +27,7 @@ function Navbar() {
             <Link href={'/'} className='hidden sm:block text-2xl text-white font-semibold textAnimationHover'>Portfolio</Link>
             
             <div className='flex justify-center w-full sm:w-auto md-:w-auto py-1 sm:py-4' id='navbar'>
-                <ul className='flex items-center gap-4 md:gap-8'>
+                <ul className='flex items-center gap-6 md:gap-10'>
                     {
                         headerNav.map((link) => (
                             <li key={link.title}>
