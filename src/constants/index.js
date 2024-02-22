@@ -1,14 +1,14 @@
-import Image01 from '../assets/project/01.png';
-import Image02 from '../assets/project/02.png';
-import Image03 from '../assets/project/03.png';
-import Image04 from '../assets/project/04.png';
-import Image05 from '../assets/project/05.png';
-import Image06 from '../assets/project/06.png';
-import Image07 from '../assets/project/07.png';
-import Image08 from '../assets/project/08.png';
-import Image09 from '../assets/project/09.png';
-import Image10 from '../assets/project/10.png';
-import Image11 from '../assets/project/11.png';
+import Image01 from '@/assets/project/01.png';
+import Image02 from '@/assets/project/02.png';
+import Image03 from '@/assets/project/03.png';
+import Image04 from '@/assets/project/04.png';
+import Image05 from '@/assets/project/05.png';
+import Image06 from '@/assets/project/06.png';
+import Image07 from '@/assets/project/07.png';
+import Image08 from '@/assets/project/08.png';
+import Image09 from '@/assets/project/09.png';
+import Image10 from '@/assets/project/10.png';
+import Image11 from '@/assets/project/11.png';
 
 export const headerNav = [
     { title: "Home", path: "#home" },
