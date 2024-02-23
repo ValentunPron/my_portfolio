@@ -66,7 +66,8 @@ export const projectData = [
     title: 'Knot',
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://knot-two.vercel.app/',
-    codeUrl: 'https://github.com/ValentunPron/knot'
+    codeUrl: 'https://github.com/ValentunPron/knot',
+    tag: ['Full stack', 'SPA']
   },
   {
     imgUrl: Image02,
@@ -74,6 +75,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/metabots',
     codeUrl: 'https://github.com/ValentunPron/metabots',
+    tag: ['Full stack', 'SPA']
   },
   {
     imgUrl: Image03,
@@ -81,6 +83,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/Millor',
     codeUrl: 'https://github.com/ValentunPron/Millor',
+    tag: ['Front end', 'SPA']
   },
   {
     imgUrl: Image04,
@@ -88,6 +91,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/Warplay_cloud',
     codeUrl: 'https://github.com/ValentunPron/Warplay_cloud',
+    tag: ['Front end']
   },
   {
     imgUrl: Image05,
@@ -95,6 +99,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/nike',
     codeUrl: 'https://github.com/ValentunPron/nike',
+    tag: ['Front end']
   },
   {
     imgUrl: Image06,
@@ -102,6 +107,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/Gogame',
     codeUrl: 'https://github.com/ValentunPron/Gogame',
+    tag: ['Front end']
   },
   {
     imgUrl: Image07,
@@ -109,6 +115,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/Creative-Design',
     codeUrl: 'https://github.com/ValentunPron/Creative-Design',
+    tag: ['Front end']
   },
   {
     imgUrl: Image08,
@@ -116,6 +123,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/TVL',
     codeUrl: 'https://github.com/ValentunPron/TVL',
+    tag: ['Front end']
   },
   {
     imgUrl: Image09,
@@ -123,6 +131,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/createX',
     codeUrl: 'https://github.com/ValentunPron/createX',
+    tag: ['Front end']
   },
   {
     imgUrl: Image10,
@@ -130,6 +139,7 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/blanko',
     codeUrl: 'https://github.com/ValentunPron/blanko',
+    tag: ['Front end']
   },
   {
     imgUrl: Image11,
@@ -137,5 +147,6 @@ export const projectData = [
     desc: 'lorem text lorem text lorem text',
     siteUrl: 'https://valentunpron.github.io/pizza-react',
     codeUrl: 'https://github.com/ValentunPron/pizza-react',
+    tag: ['Front end']
   },
 ]

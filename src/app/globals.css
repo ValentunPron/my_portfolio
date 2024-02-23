@@ -26,4 +26,12 @@
   .tabsActive {
     @apply border-b-2 text-white border-blue-500 transform scale-110
   }
+
+  .tags {
+    @apply rounded-full border-2 border-slate-600 px-6 py-2 hover:border-slate-100 focus:border-blue-500 transition-all duration-300
+  }
+
+  .tagsActive {
+    @apply border-blue-600
+  }
 }
