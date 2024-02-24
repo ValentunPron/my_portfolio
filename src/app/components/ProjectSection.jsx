@@ -18,10 +18,8 @@ function ProjectSection() {
     }
   })
 
-  console.log(filtedProject);
-
   return (
-    <div>
+    <div id='project'>
       <h2 className='text-4xl font-bold text-white mb-4'>My Project</h2>
       <div className='text-white text-xl font-semibold flex flex-row flex-wrap justify-center items-center gap-4 py-4'>
         <button className={`tags ${tag === 'All' && 'tagsActive'}`} onClick={(() => handleTagChange('All'))}>All</button>

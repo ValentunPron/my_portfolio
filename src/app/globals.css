@@ -35,3 +35,37 @@
     @apply border-blue-600
   }
 }
+
+@keyframes colorAnimation {
+	0% {
+		background-position: 0% 0;
+	}
+
+	40% {
+		background-position: -100% 0;
+	}
+
+	60% {
+		background-position: -150% 0;
+	}
+
+	80% {
+		background-position: -200% 0;
+	}
+
+	100% {
+		background-position: -300% 0;
+	}
+}
+
+* {
+  scroll-margin-top: 30px;
+}
+
+.footer .animation {
+  background: linear-gradient(90deg, rgba(88, 70, 249, 0.00) 10.40%, #F25AC9 26.56%, #45D9FC 41.15%, #5846F9 59.90%, #003350 75.52%, rgba(88, 70, 249, 0.00) 91.67%);
+  background-size: 300% 100%;
+  border-radius: 50%;
+  backdrop-filter: blur(12px);
+  animation: colorAnimation 8s linear infinite;
+}

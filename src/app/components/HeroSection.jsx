@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 function HeroSection() {
   return (
     <section>
-        <div className='grid grid-cols-1 md:grid-cols-12 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-12 gap-4' id='home'>
             <div className='col-span-7 place-self-center text-center sm:text-left'>
                 <h1 className='text-white mb-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold'>
                     <span className='text-transparent bg-clip-text textAnimationHover blueGradientText mb-2'>Hello, I&#39;m {" "}</span> 
@@ -35,7 +35,7 @@ function HeroSection() {
                 </p>
                 <div className='mt-4'>
                     <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-3 blueGradientButton hover:bg-slate-300 text-white'>Hire me</button>
-                    <button className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3'>Download CV</button>
+                    <a href='./../assets/CV_Pron.pdf' className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3' download>Download CV</a>
                 </div>
             </div>
             <div className='col-span-5 mx-auto'>
