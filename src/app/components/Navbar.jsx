@@ -34,7 +34,7 @@ function Navbar() {
     }, []);
 
   return (
-    <nav className={`w-full p-2 bg-glassmorphism backdrop-blur-md fixed z-10 trasition ease-in-out duration-500 ${animateHeader && "shadow-xl"}`}>
+    <nav className={`w-full container p-2 px-4 bg-glassmorphism backdrop-blur-lg fixed z-10 trasition ease-in-out duration-500 ${animateHeader && "shadow-xl"}`}>
         <div className='flex flex-wrap items-center justify-between mx-auto'>
             <Link href={'/'} className='hidden sm:block text-2xl text-white font-semibold textAnimationHover'>Portfolio</Link>
             
