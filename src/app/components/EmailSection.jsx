@@ -37,9 +37,9 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-10 pt-16 pb-14 gap-4 relative"
     >
-      <div className="blueGradientButton from-primary-900 to-transparent rounded-full h-40 w-40 sm:h-60 sm:w-60 z-0 blur-lg absolute bottom-10 -left-0 transform -translate-x-1/2 translate-y-1/2 animate-neon"></div>
-      <div className="z-5 relative">
-        <h5 className="text-4xl font-bold text-white textAnimationHover my-2">
+      <div className="blueGradientButton from-primary-900 to-transparent rounded-full h-40 w-40 sm:h-60 sm:w-60 z-10 blur-lg absolute bottom-10 -left-0 transform -translate-x-1/2 translate-y-1/2 animate-neon"></div>
+      <div className="z-20 relative">
+        <h5 className="text-4xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 textAnimationHover max-w-md">

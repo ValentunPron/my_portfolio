@@ -16,7 +16,7 @@ function AboutSection() {
 
   return (
     <section className='text-white' id="about">
-      <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 xl:gap-16 sm:py-16'>
+      <div className='md:grid md:grid-cols-2 gap-12 md:gap-8 items-center py-8 xl:gap-16 sm:py-16'>
         <div class="relative textAnimationHover hover:rotate-3">
           <Image 
             src={ImageAbout}
@@ -25,10 +25,10 @@ function AboutSection() {
             height={500}
             className='rounded-lg relative z-20 border w-[320px] md:w-auto md:h-auto mx-auto'
           />
-          <div class="neonImage absolute mx-auto top-0 h-full inset-6 rounded-md blur-md blueGradientText animate-neon z-10"></div>
+          <div class="neonImage absolute top-0 h-full inset-1 rounded-md blur-md blueGradientText animate-neon z-10"></div>
         </div>
-        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
-          <h2 className='text-4xl font-bold text-white mb-4 textAnimationHover'>About</h2>
+        <div className='mt-6 md:mt-0 text-left flex flex-col h-full'>
+          <h2 className='text-4xl font-bold text-white mb-4'>About</h2>
           <p className='text-base lg:text-base text-[#ADB7BE] textAnimationHover'>
             I am a Full Stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Next.js, Node.js, Express, MongoDB, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
           </p>
