@@ -64,7 +64,7 @@ export const projectData = [
   {
     imgUrl: Image01,
     title: 'Knot',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'Knot is a modern social network where you can communicate, share ideas and find new people. Create publications, communicate with friends, look for like-minded people, follow interesting topics. Thanks to Next.js, Knot loads quickly and securely.',
     siteUrl: 'https://knot-two.vercel.app/',
     codeUrl: 'https://github.com/ValentunPron/knot',
     tag: ['Full stack', 'SPA']
@@ -72,7 +72,7 @@ export const projectData = [
   {
     imgUrl: Image02,
     title: 'Metabots',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'Full stack single page app for Metabods NFT shop.',
     siteUrl: 'https://valentunpron.github.io/metabots',
     codeUrl: 'https://github.com/ValentunPron/metabots',
     tag: ['Full stack', 'SPA']
@@ -80,7 +80,7 @@ export const projectData = [
   {
     imgUrl: Image03,
     title: 'Millor',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'Single page app for Millor coffee shop.',
     siteUrl: 'https://valentunpron.github.io/Millor',
     codeUrl: 'https://github.com/ValentunPron/Millor',
     tag: ['Front end', 'SPA']
@@ -88,7 +88,7 @@ export const projectData = [
   {
     imgUrl: Image04,
     title: 'Warplay cloud',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'The landing of the Warplay cloud gaming platform.',
     siteUrl: 'https://valentunpron.github.io/Warplay_cloud',
     codeUrl: 'https://github.com/ValentunPron/Warplay_cloud',
     tag: ['Front end']
@@ -96,7 +96,7 @@ export const projectData = [
   {
     imgUrl: Image05,
     title: 'Nike site',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'The landing of Nike sneakers.',
     siteUrl: 'https://valentunpron.github.io/nike',
     codeUrl: 'https://github.com/ValentunPron/nike',
     tag: ['Front end']
@@ -104,7 +104,7 @@ export const projectData = [
   {
     imgUrl: Image06,
     title: 'Healas.lt',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'An experimental layout that I made in 2 hours.',
     siteUrl: 'https://valentunpron.github.io/Gogame',
     codeUrl: 'https://github.com/ValentunPron/Gogame',
     tag: ['Front end']
@@ -112,7 +112,7 @@ export const projectData = [
   {
     imgUrl: Image07,
     title: 'Creative Design',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'A showcase of various Creative Design design projects.',
     siteUrl: 'https://valentunpron.github.io/Creative-Design',
     codeUrl: 'https://github.com/ValentunPron/Creative-Design',
     tag: ['Front end']
@@ -120,7 +120,7 @@ export const projectData = [
   {
     imgUrl: Image08,
     title: 'TVL',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'Website of the travel company TVL.',
     siteUrl: 'https://valentunpron.github.io/TVL',
     codeUrl: 'https://github.com/ValentunPron/TVL',
     tag: ['Front end']
@@ -128,7 +128,7 @@ export const projectData = [
   {
     imgUrl: Image09,
     title: 'CreateX',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'The landing of CreateX company',
     siteUrl: 'https://valentunpron.github.io/createX',
     codeUrl: 'https://github.com/ValentunPron/createX',
     tag: ['Front end']
@@ -136,7 +136,7 @@ export const projectData = [
   {
     imgUrl: Image10,
     title: 'Blanko',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'The landing of Blanko company',
     siteUrl: 'https://valentunpron.github.io/blanko',
     codeUrl: 'https://github.com/ValentunPron/blanko',
     tag: ['Front end']
@@ -144,9 +144,9 @@ export const projectData = [
   {
     imgUrl: Image11,
     title: 'React pizza',
-    desc: 'lorem text lorem text lorem text',
+    desc: 'Single page application site from the course.',
     siteUrl: 'https://valentunpron.github.io/pizza-react',
     codeUrl: 'https://github.com/ValentunPron/pizza-react',
-    tag: ['Front end']
+    tag: ['Front end', 'SPA']
   },
 ]

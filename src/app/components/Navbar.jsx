@@ -7,17 +7,29 @@ import EmailGIF from '@/assets/email.gif';
 
 function Navbar() {
     const [animateHeader, setAnimateHeader] = React.useState(false);
-    
+    const [linkActive, setLinkActive] = React.useState('home');
+
     React.useEffect(() => {
-      const listener = () => {
-        if (window.scrollY > 140) {
-          setAnimateHeader(true);
-        } else setAnimateHeader(false);
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+  
+        headerNav.forEach((nav) => {
+          const section = document.getElementById(nav.title.toLowerCase());
+          if (section) {
+            const sectionTop = section.offsetTop-1;
+            const sectionBottom = sectionTop + section.clientHeight-1;
+  
+            if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+              setLinkActive(nav.title.toLowerCase());
+            }
+          }
+        });
       };
-      window.addEventListener("scroll", listener);
+  
+      window.addEventListener('scroll', handleScroll);
   
       return () => {
-        window.removeEventListener("scroll", listener);
+        window.removeEventListener('scroll', handleScroll);
       };
     }, []);
 
@@ -30,8 +42,8 @@ function Navbar() {
                 <ul className='flex items-center gap-6 md:gap-10'>
                     {
                         headerNav.map((link) => (
-                            <li key={link.title}>
-                                <Link href={link.path} className='headerLink'>
+                            <li key={link.title} onClick={() => setLinkActive(link.title.toLowerCase())}>
+                                <Link href={link.path} className={`headerLink ${linkActive === link.title.toLowerCase() ? 'scale-125 text-blue-700' : ''}`}>
                                     {link.title}
                                 </Link>
                             </li>

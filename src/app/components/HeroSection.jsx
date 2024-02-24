@@ -4,6 +4,7 @@ import React from 'react'
 import heroImage from '@/assets/hero.png'
 import { TypeAnimation } from 'react-type-animation';
 
+
 function HeroSection() {
   return (
     <section>
@@ -34,13 +35,17 @@ function HeroSection() {
                     My name is Valentyn. I am Full stack web developer with a passion for creating interactive and responsive web applications. I am to develop in the of full stack, I quickly correct errors, I read and understand technical tasks in English.
                 </p>
                 <div className='mt-4'>
-                    <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-3 blueGradientButton hover:bg-slate-300 text-white'>Hire me</button>
-                    <a href='./../assets/CV_Pron.pdf' className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3' download>Download CV</a>
+                    <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-3 blueGradientButton hover:bg-slate-300 text-white'>
+                        <a href="#contact">My contacts</a>
+                    </button>
+                    <button className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3'>
+                        <a href="./files/CV_Pron.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+                    </button>
                 </div>
             </div>
             <div className='col-span-5 mx-auto'>
                 <a href='https://github.com/ValentunPron' target='_blank'>
-                    <div className='relative rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] transform transition duration-500 hover:scale-90'>
+                    <div className='relative rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] transform transition duration-500 hover:scale-90 hover:animate-none animate-pulse'>
                         <Image 
                             src={heroImage}
                             alt='hero'

@@ -3,8 +3,15 @@ import Image from 'next/image'
 import { CodeBracketIcon, EyeIcon} from '@heroicons/react/24/outline';
 
 function ProjectCard({ imgUrl, title, desc, siteUrl, codeUrl,}) {
+  function truncateText(text) {
+    if (text.length > 300) {
+        return text.slice(0, 100) + '...';
+    }
+    return text;
+}
+
   return (
-    <div>
+    <div className='bg-[#181818] rounded-b-xl'>
         <div className='relative h-50 md:h-72 group'>
           <Image src={imgUrl} alt={title} className='h-50 md:h-72 rounded-xl object-cover object-top'/>
           <div className='overlay gap-5 items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500'>
@@ -16,9 +23,9 @@ function ProjectCard({ imgUrl, title, desc, siteUrl, codeUrl,}) {
             </a>
           </div>
         </div>
-        <div className='text-white rounded-b-xl bg-[#181818] py-6 px-4'>
+        <div className='text-white py-6 px-4'>
             <h5 className='font-xl font-semibold mb-2'>{title}</h5>
-            <p className='text-[#ADB7BE]'>{desc}</p>
+            <p className='text-[#ADB7BE]'>{truncateText(desc)}</p>
         </div>
     </div>
   )

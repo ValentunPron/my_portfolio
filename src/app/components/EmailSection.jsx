@@ -35,14 +35,14 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-20 gap-4 relative"
+      className="grid md:grid-cols-2 my-10 pt-16 pb-14 gap-4 relative"
     >
-      <div className="blueGradientButton from-primary-900 to-transparent rounded-full h-60 w-60 z-0 blur-lg absolute bottom-10 -left-0 transform -translate-x-1/2 translate-y-1/2"></div>
+      <div className="blueGradientButton from-primary-900 to-transparent rounded-full h-40 w-40 sm:h-60 sm:w-60 z-0 blur-lg absolute bottom-10 -left-0 transform -translate-x-1/2 translate-y-1/2 animate-neon"></div>
       <div className="z-5 relative">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-4xl font-bold text-white textAnimationHover my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#ADB7BE] mb-4 textAnimationHover max-w-md">
           {" "}
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
