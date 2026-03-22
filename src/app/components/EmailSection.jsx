@@ -1,43 +1,39 @@
 "use client";
-import React, { useState } from "react";
 import Link from "next/link";
-import emailjs from '@emailjs/browser';
+import { useForm, ValidationError } from '@formspree/react';
 
 const EmailSection = () => {
+  const [state, handleSubmit] = useForm("xqeyvpjg");
+  if (state.succeeded) {
+    return (
+      <div className="flex flex-col items-center justify-center p-12 bg-[#18191E] border border-[#33353F] rounded-lg text-center animate-in fade-in zoom-in duration-300">
+        <div className="w-16 h-16 bg-blue-500/10 border border-blue-500/50 rounded-full flex items-center justify-center mb-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+            stroke="#2196F3"
+            className="w-8 h-8"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+          </svg>
+        </div>
 
-  const [toSend, setToSend] = useState({ from_email: '', from_subject: '', from_message: '' });
-  const [isSent, setIsSent] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [activeEmail, setActiveEmail] = React.useState(false);
+        <h3 className="text-2xl font-bold text-white mb-2">Message sent!</h3>
+        <p className="text-gray-400 mb-8">
+          Thank you! I received your letter and will respond shortly.
+        </p>
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EmailJS_Service,
-        process.env.NEXT_PUBLIC_EmailJS_Template,
-        {
-          from_email: toSend.from_email,
-          from_subject: toSend.from_subject,
-          from_message: toSend.from_message,
-        },
-        process.env.NEXT_PUBLIC_EmailJS_PublicKey
-      );
-
-      setIsSent(true);
-    } catch (error) {
-      console.error('EmailJS Error:', error);
-      alert('Failed to send email. Check your EmailJS dashboard or console.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
+        <button
+          onClick={() => window.location.reload()}
+          className="text-sm text-blue-500 hover:text-blue-400 font-medium underline underline-offset-4 transition"
+        >
+          Send another message
+        </button>
+      </div >
+    );
+  }
 
   return (
     <section
@@ -55,73 +51,68 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
+        <div className="socials flex flex-row gap-2">
+          <Link href="github.com">
+
+          </Link>
+          <Link href="linkedin.com">
+
+          </Link>
+        </div>
       </div>
       <div className="z-5 relative">
-        {activeEmail ? (
-          <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
-          </p>
-        ) : (
-          <form className="flex flex-col" onSubmit={onSubmit}>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Your email
-              </label>
-              <input
-                name="from_email"
-                value={toSend.from_email}
-                type="email"
-                onChange={handleChange}
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="valentunpron@gmail.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="from_subject"
-                value={toSend.from_subject}
-                type="text"
-                onChange={handleChange}
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Message
-              </label>
-              <textarea
-                name="from_message"
-                value={toSend.from_message}
-                type="text"
-                onChange={handleChange}
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
-              />
-            </div>
-            <button
-              type="submit"
-              disabled={loading} // Блокуємо кнопку під час відправки
-              className="blueGradientButton hover:bg-primary-600 text-white font-medium py-2 px-5 rounded-lg w-full disabled:opacity-50"
+        <form className="flex flex-col" action={handleSubmit}>
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              className="text-white block mb-2 text-sm font-medium"
             >
-              {loading ? "Sending..." : "Send Message"}
-            </button>
-          </form>
-        )}
+              Your email
+            </label>
+            <input
+              name="email"
+              type="email"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="valentunpron@gmail.com"
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="subject"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Subject
+            </label>
+            <input
+              name="subject"
+              type="text"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Just saying hi"
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="message"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Message
+            </label>
+            <textarea
+              name="message"
+              type="text"
+              className="bg-[#18191E] resize-none h-[125px] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Let's talk about..."
+            />
+          </div>
+          <button
+            type="submit"
+            className="blueGradientButton hover:bg-primary-600 text-white font-medium py-2 px-5 rounded-lg w-full"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   );

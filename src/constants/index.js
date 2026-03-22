@@ -12,7 +12,7 @@ import Image11 from '@/assets/project/11.PNG';
 
 export const headerNav = [
   { title: "Home", path: "#home" },
-  { title: "About", path: "#about" },
+  { title: "Skills", path: "#about" },
   { title: "Contact", path: "#contact" },
 ];
 
