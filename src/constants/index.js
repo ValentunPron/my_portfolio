@@ -11,25 +11,37 @@ import Image10 from '@/assets/project/10.PNG';
 import Image11 from '@/assets/project/11.PNG';
 
 export const headerNav = [
-    { title: "Home", path: "#home" },
-    { title: "About", path: "#about" },
-    { title: "Project", path: "#project"},
-    { title: "Contact", path: "#contact"},
-  ];
+  { title: "Home", path: "#home" },
+  { title: "About", path: "#about" },
+  { title: "Contact", path: "#contact" },
+];
 
 export const tabData = [
+  {
+    title: 'Cybersecurity',
+    id: 'cybersecurity',
+    content: (
+      <ul className="list-disc pl-2">
+        <li>— Windows</li>
+        <li>— Linux</li>
+        <li>— OSI model and TCP/IP stack</li>
+        <li>— Nmap, Metasploit, WhatWeb, Curl</li>
+        <li>— Python and Bash</li>
+      </ul>
+    )
+  },
   {
     title: 'Front-end',
     id: 'front-end',
     content: (
       <ul className="list-disc pl-2">
-        <li>HTML / HTML5</li>
-        <li>CSS (SASS, SCSS, LESS)</li>
-        <li>JavaScript (ES6+), TypeScript</li>
-        <li>React (Hooks, Router)</li>
-        <li>Next.js</li>
-        <li>Redux / Redux-toolkit</li>
-        <li>Tailwind</li>
+        <li>— HTML / HTML5</li>
+        <li>— CSS (SASS, SCSS, LESS)</li>
+        <li>— JavaScript (ES6+), TypeScript</li>
+        <li>— React (Hooks, Router)</li>
+        <li>— Next.js</li>
+        <li>— Redux / Redux-toolkit</li>
+        <li>— Tailwind</li>
       </ul>
     )
   },
@@ -37,12 +49,12 @@ export const tabData = [
     title: 'Back-end',
     id: 'back-end',
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-        <li>JSON Web Tokens</li>
-        <li>RESTful API</li>
+      <ul className="li— st-disc pl-2">
+        <li>— Node.js</li>
+        <li>— Express</li>
+        <li>— MongoDB</li>
+        <li>— JSON Web Tokens</li>
+        <li>— RESTful API</li>
       </ul>
     )
   },
@@ -51,10 +63,9 @@ export const tabData = [
     id: 'language',
     content: (
       <ul className="list-disc pl-2">
-        <li>Ukraine - Native</li>
-        <li>Russian - C2</li>
-        <li>English - B2</li>
-        <li>German - A2</li>
+        <li>— Ukraine - Native</li>
+        <li>— English - B1</li>
+        <li>— Czech - A2</li>
       </ul>
     )
   }

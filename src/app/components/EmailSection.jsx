@@ -1,35 +1,34 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import emailJs from 'emailjs-com';
 
 const EmailSection = () => {
 
   const [toSend, setToSend] = React.useState({ from_email: '', from_subject: '', from_message: '' });
-	const [activeEmail, setActiveEmail] = React.useState(false);
+  const [activeEmail, setActiveEmail] = React.useState(false);
 
-	function onSubmit(e) {
-		e.preventDefault();
+  function onSubmit(e) {
+    e.preventDefault();
 
-		let templateParams = {
-			from_email: toSend.from_email,
+    let templateParams = {
+      from_email: toSend.from_email,
       from_subject: toSend.from_subject,
       from_message: toSend.from_message,
-		};
+    };
 
-		emailJs.send(process.env.NEXT_PUBLIC_EmailJS_Service, process.env.NEXT_PUBLIC_EmailJS_Template, templateParams, process.env.NEXT_PUBLIC_EmailJS_PublicKey)
-			.then((result) => {
-				setActiveEmail(true);
-			}, (error) => {
-				alert('The email address is incorrect')
-				console.log(error)
-			});
-	};
+    emailJs.send(process.env.NEXT_PUBLIC_EmailJS_Service, process.env.NEXT_PUBLIC_EmailJS_Template, templateParams, process.env.NEXT_PUBLIC_EmailJS_PublicKey)
+      .then((result) => {
+        setActiveEmail(true);
+      }, (error) => {
+        alert('The email address is incorrect')
+        console.log(error)
+      });
+  };
 
-	const handleChange = (e) => {
-		setToSend({ ...toSend, [e.target.name]: e.target.value });
-	};
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
 
 
   return (
@@ -50,7 +49,7 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
-         
+
           </Link>
           <Link href="linkedin.com">
 

@@ -6,15 +6,17 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 function HeroSection() {
-  return (
-    <section>
-        <div className='grid grid-cols-1 md:grid-cols-12 gap-5' id='home'>
-            <div className='col-span-7 place-self-center text-center sm:text-left'>
-                <h1 className='text-white mb-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold'>
-                    <span className='text-transparent bg-clip-text textAnimationHover blueGradientText mb-2'>Hello, I&#39;m {" "}</span> 
-                    <TypeAnimation
+    return (
+        <section>
+            <div className='md:pt-[60px] pt-[10px] grid grid-cols-1 md:grid-cols-12 gap-2 justify-center' id='home'>
+                <div className='col-span-6 place-self-center text-center sm:text-left'>
+                    <h1 className='text-white mb-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold'>
+                        <span className='text-transparent bg-clip-text textAnimationHover blueGradientText mb-2'>Hello, I&#39;m {" "}</span>
+                        <TypeAnimation
                             sequence={[
                                 'Valentyn',
+                                3000,
+                                'Cybersecurity specialist',
                                 3000,
                                 'Full Stack Developer',
                                 3000,
@@ -22,43 +24,43 @@ function HeroSection() {
                                 3000,
                                 'Back-end Developer',
                                 3000,
-                                'Node.js Developer',
-                                3000
                             ]}
                             wrapper="span"
                             speed={50}
                             style={{ display: 'block' }}
                             repeat={Infinity}
                         />
-                </h1>
-                <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl textAnimationHover'>
-                    My name is Valentyn. I am Full stack web developer with a passion for creating interactive and responsive web applications. I am to develop in the of full stack, I quickly correct errors, I read and understand technical tasks in English.
-                </p>
-                <div className='mt-4'>
-                    <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-3 blueGradientButton hover:bg-slate-300 text-white'>
-                        <a href="#contact">My contacts</a>
-                    </button>
-                    <button className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-4'>
-                        <a href="./files/CV_Pron.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-                    </button>
+                    </h1>
+                    <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl textAnimationHover'>
+                        My name is Valentyn. I am a Cybersecurity Specialist with a year of commercial experience as an IT & Security Engineer at "Prykarpatenergotreyd". I specialize in Infrastructure Defense and Network Security, with a deep understanding of the OSI model and TCP/IP stack.
+                    </p>
+                    <p className='text-[#ADB7BE] pt-7 text-base sm:text-lg lg:text-xl textAnimationHover'>
+                        What sets me apart is the combination of Enterprise Administration (Active Directory, GPO, Linux hardening) and Full-stack development (React, Node.js). This allows me to see security as a holistic system — from hardware diagnostics and network routing to code-level vulnerabilities and JWT security. I am an active CTF participant (HackTheBox, GUR) and proficient in English (B1), which I use daily for technical documentation and research.
+                    </p>
+                    <div className='mt-4'>
+                        <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-3 blueGradientButton hover:bg-slate-300 text-white'>
+                            <a href="#contact">My contacts</a>
+                        </button>
+                        <button className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-4'>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Download CV</a>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div className='col-span-5 mx-auto'>
-                <a href='https://github.com/ValentunPron' target='_blank'>
-                    <div className='relative rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] transform transition duration-500 hover:scale-90 hover:animate-none animate-pulse'>
-                        <Image 
+                <div className='col-span-6 mx-auto  md:block hidden '>
+                    <div className='relative rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[325px] md:h-[325px] lg:w-[400px] lg:h-[400px]'>
+                        <Image
                             src={heroImage}
                             alt='hero'
-                            className='absolute w-[200px] h-[200px] md:w-[270px] md:h-[270px] lg:w-[320px] lg:h-[320px]  transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                            width={320}
-                            height={320}
+                            className='absolute z-10  w-[200%] h-[150%] transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                            width={700}
+                            height={700}
                         />
+                        <div className='absolute blueGradientText blur-md w-full h-full z-1 animate-pulse rounded-full' />
                     </div>
-                </a>
+                </div>
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default HeroSection

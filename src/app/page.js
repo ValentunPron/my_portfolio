@@ -12,7 +12,6 @@ export default function Home() {
       <div className="container mx-auto py-8 px-4 sm:px-6 mt-12">
         <HeroSection />
         <AboutSection />
-        <ProjectSection />
         <EmailSection />
         <FooterSection />
       </div>

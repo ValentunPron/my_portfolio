@@ -8,13 +8,13 @@
   }
 
   .textAnimationHover {
-    @apply transform transition duration-300 hover:scale-95 cursor-default
+    @apply transform transition duration-300 hover:scale-105 cursor-default
   }
 
   .blueGradientButton {
-    @apply bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 transition duration-300 ease-in-out hover:opacity-75
+    @apply bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 transition duration-300 ease-in-out hover:opacity-60
   }
-  
+
   .blueGradientText {
     @apply bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500
   }
@@ -36,6 +36,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   scroll-margin-top: 30px;
 }
@@ -54,13 +58,15 @@
 
 @keyframes neon-glow {
   0% {
-    box-shadow: 0 0 0 10px rgba(0, 0, 255, 0.2);
+    box-shadow: 0 0 0 7px rgba(0, 0, 255, 0.2);
   }
+
   50% {
-    box-shadow: 0 0 0 10px rgba(0, 51, 255, 0.2);
+    box-shadow: 0 0 0 7px rgba(0, 51, 255, 0.2);
   }
+
   100% {
-    box-shadow: 0 0 0 10px rgba(0, 102, 255, 0.2);
+    box-shadow: 0 0 0 7px rgba(0, 102, 255, 0.2);
   }
 }
 
@@ -68,32 +74,34 @@
   0% {
     transform: scale(0.95);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0.95);
   }
 }
 
 @keyframes colorAnimation {
-	0% {
-		background-position: 0% 0;
-	}
+  0% {
+    background-position: 0% 0;
+  }
 
-	40% {
-		background-position: -100% 0;
-	}
+  40% {
+    background-position: -100% 0;
+  }
 
-	60% {
-		background-position: -150% 0;
-	}
+  60% {
+    background-position: -150% 0;
+  }
 
-	80% {
-		background-position: -200% 0;
-	}
+  80% {
+    background-position: -200% 0;
+  }
 
-	100% {
-		background-position: -300% 0;
-	}
+  100% {
+    background-position: -300% 0;
+  }
 }
