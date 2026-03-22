@@ -32,7 +32,7 @@ function HeroSection() {
                         />
                     </h1>
                     <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl textAnimationHover'>
-                        My name is Valentyn. I am a Cybersecurity Specialist with a year of commercial experience as an IT & Security Engineer at "Prykarpatenergotreyd". I specialize in Infrastructure Defense and Network Security, with a deep understanding of the OSI model and TCP/IP stack.
+                        My name is Valentyn. I am a Cybersecurity Specialist with a year of commercial experience as an IT & Security Engineer at &quot;Prykarpatenergotreyd&quot;. I specialize in Infrastructure Defense and Network Security, with a deep understanding of the OSI model and TCP/IP stack.
                     </p>
                     <p className='text-[#ADB7BE] pt-7 text-base sm:text-lg lg:text-xl textAnimationHover'>
                         What sets me apart is the combination of Enterprise Administration (Active Directory, GPO, Linux hardening) and Full-stack development (React, Node.js). This allows me to see security as a holistic system — from hardware diagnostics and network routing to code-level vulnerabilities and JWT security. I am an active CTF participant (HackTheBox, GUR) and proficient in English (B1), which I use daily for technical documentation and research.
@@ -47,15 +47,15 @@ function HeroSection() {
                     </div>
                 </div>
                 <div className='col-span-6 mx-auto  md:block hidden '>
-                    <div className='relative rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[325px] md:h-[325px] lg:w-[400px] lg:h-[400px]'>
+                    <div className='relative z-5 rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[325px] md:h-[325px] lg:w-[400px] lg:h-[400px]'>
+                        <div className='absolute blueGradientText blur-md w-full h-full animate-pulse rounded-full' />
                         <Image
                             src={heroImage}
                             alt='hero'
-                            className='absolute z-10  w-[200%] h-[150%] transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                            className='absolute z-5  w-[200%] h-[150%] transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
                             width={700}
                             height={700}
                         />
-                        <div className='absolute blueGradientText blur-md w-full h-full z-1 animate-pulse rounded-full' />
                     </div>
                 </div>
             </div>

@@ -17,7 +17,7 @@ function AboutSection() {
   return (
     <section className='text-white' id="about">
       <div className='md:grid md:grid-cols-2 gap-12 md:gap-8 items-center py-8 xl:gap-16 sm:py-16'>
-        <div class="relative textAnimationHover hover:rotate-1">
+        <div className="relative textAnimationHover hover:rotate-1">
           <Image
             src={ImageAbout}
             alt="image"
@@ -25,7 +25,7 @@ function AboutSection() {
             height={400}
             className='rounded-lg relative z-20 border w-[300px] md:w-auto md:h-auto mx-auto'
           />
-          <div class="neonImage absolute top-0 h-full inset-1 rounded-md blur-md blueGradientText animate-neon z-10"></div>
+          <div className="neonImage absolute top-0 h-full inset-1 rounded-md blur-md blueGradientText animate-neon z-10"></div>
         </div>
         <div className='mt-6 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>My skills</h2>

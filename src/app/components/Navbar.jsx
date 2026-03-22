@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <nav className={`container p-2 px-4 left-0 right-0 mx-auto bg-glassmorphism backdrop-blur-lg fixed z-10 trasition ease-in-out duration-500 ${animateHeader && "shadow-xl"}`}>
       <div className='flex flex-wrap items-center justify-between mx-auto'>
-        <Link href={'/'} className='hidden sm:block text-2xl text-white font-semibold textAnimationHover'>It's my portfolio</Link>
+        <Link href={'/'} className='hidden sm:block text-2xl text-white font-semibold textAnimationHover'>It&apos;s my portfolio</Link>
 
         <div className='flex justify-center w-full sm:w-auto md-:w-auto py-1 sm:py-4' id='navbar'>
           <ul className='flex items-center gap-6 md:gap-10'>
