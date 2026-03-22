@@ -3,7 +3,9 @@ import Link from "next/link";
 import { useForm, ValidationError } from '@formspree/react';
 
 const EmailSection = () => {
-  const [state, handleSubmit] = useForm(process.env.API_EMAIL);
+
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_EMAIL_ID || "local");
+
   if (state.succeeded) {
     return (
       <div className="flex flex-col items-center justify-center p-12 bg-[#18191E] border border-[#33353F] rounded-lg text-center animate-in fade-in zoom-in duration-300">
