@@ -1,9 +1,14 @@
+import dynamic from "next/dynamic";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
-import ProjectSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
-import FooterSection from "./components/FooterSection";
+
+const FooterSection = dynamic(() => import("./components/FooterSection"), {
+  ssr: false,
+  loading: () => <footer className="h-20 bg-[#121212]" />
+});
+
 
 export default function Home() {
   return (
