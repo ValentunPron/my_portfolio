@@ -51,7 +51,7 @@ function AboutSection() {
             <button
               onClick={() => handleTabChange('language')}
               className={`tabs ${tab === 'language' && 'tabsActive'}`}>
-              Language
+              Languages
             </button>
           </div>
           <div className='sm:text-base text-sm mt-8'>{tabData.find((t) => t.id === tab).content}</div>
