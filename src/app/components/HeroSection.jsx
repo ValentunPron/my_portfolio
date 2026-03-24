@@ -42,7 +42,7 @@ function HeroSection() {
                             <a href="#contact">My contacts</a>
                         </button>
                         <button className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-4'>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Download CV</a>
+                            <a href="./files/CV_Pron.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
                         </button>
                     </div>
                 </div>
